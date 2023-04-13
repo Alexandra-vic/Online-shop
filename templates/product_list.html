@@ -1,0 +1,37 @@
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+{% for product in products %}
+
+<div class="card" style="width: 18rem;">
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+            </div>
+
+            <div class="'card-body" style="width: 18rem">
+                <p class="card-text">{{ product.category_id }}</p>
+            </div>
+
+            <div class="'card-body" style="width: 18rem">
+                <p class="card-text">{{ product.price }}</p>
+            </div>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+            </ul>
+
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div> 
+</div>
+
+{% endfor %}
